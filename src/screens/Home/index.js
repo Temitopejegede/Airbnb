@@ -16,7 +16,7 @@ const HomeScreen = (props) => {
                     onPress={() => console.warn('searchButton has been clicked')}
                 >
                     <Feather name="search" size={24} color="#f15454" />
-                    <Text style={styles.searchButtonText}>Where are you going</Text>
+                    <Text style={styles.searchButtonText}> Where are you going</Text>
                     
             </Pressable>
 
