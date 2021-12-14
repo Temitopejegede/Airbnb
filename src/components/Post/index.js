@@ -3,29 +3,31 @@ import {View, Text, Image} from 'react-native';
 import styles from './styles.js';
 
 const Post = (props) => {
+
+    const post = props.post;
     return (
         <View style={styles.container}>
             
 
             <Image 
                 style={styles.image}
-                source={{url: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/1.jpg'}}
+                source={{url: post.image}}
             />
 
-            <Text style={styles.bedrooms}>1 bed 1 bedroom</Text>
+            <Text style={styles.bedrooms}>
+                {post.bed} bed {post.bedroom} bedroom
+            </Text>
 
             <Text style={styles.descriptions} numberOfLines={2}>
-                Entire Flat. Puerto de la cruz Consequat occaecat anim minim nisi aute non nulla id sint aliqua ut adipisicing. 
-                Nostrud cupidatat Lorem proident non et anim. Ut culpa et et sunt cupidatat id Lorem. Laboris proident officia culpa ea. 
-                Reprehenderit eiusmod voluptate ad commodo elit minim minim amet quis cillum occaecat.
+                {post.type}. {post.title}
             </Text>
             
             <Text style={styles.prices}>
-                <Text style={styles.oldPrice}>$36</Text>
-                <Text style={styles.price}>  $30</Text>
+                <Text style={styles.oldPrice}>${post.oldPrice}</Text>
+                <Text style={styles.price}>  ${post.newPrice}</Text>
             </Text>
 
-            <Text style={styles.totalPrice}>$250 total</Text>
+            <Text style={styles.totalPrice}>${post.totalPrice} total</Text>
 
         </View>
     );
