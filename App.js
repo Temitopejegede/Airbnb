@@ -29,6 +29,7 @@ import {
 import HomeScreen from './src/screens/Home';
 import Post from './src/components/Post';
 import feed from './assests/data/feed'
+import SearchResultsScreen from './src/screens/SearchResults';
 
 const post1 = feed[0];
 const post2 = feed[1];
@@ -42,8 +43,10 @@ const App: () => Node = () => {
       <SafeAreaView>
         {/*<HomeScreen />*/}
 
-        <Post post={post1} />
-        <Post post={post2} />
+        {/*<Post post={post1} >*/}
+        {/*<Post post={post2}> */}
+
+        <SearchResultsScreen/>
 
         
       </SafeAreaView>
