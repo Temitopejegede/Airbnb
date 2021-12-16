@@ -1,16 +1,14 @@
 import React, {useState} from 'react';
-import {
-    View,
-    TextInput, 
-    FlatList
-} from 'react-native';
+import {View, TextInput, FlatList} from 'react-native';
 import styles from './styles';
 import searchResults from '../../../assests/data/search';
 import {Entypo} from '@expo/vector-icons';
 
 const DestinationSearchScreen = props => {
-{/*const [inputText, setInputText] = useState({initialState: ''});*/}
-const [inputText, setInputText] = useState('');
+  {
+    /*const [inputText, setInputText] = useState({initialState: ''});*/
+  }
+  const [inputText, setInputText] = useState('');
   return (
     <View style={styles.container}>
       <TextInput

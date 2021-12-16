@@ -21,7 +21,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginRight: 15,
   },
-  locationText: {},
+  locationText: {
+      fontSize: 20,
+      color: '#e43421',
+  },
 });
 
 export default styles;
