@@ -31,6 +31,7 @@ import Post from './src/components/Post';
 import feed from './assests/data/feed';
 import SearchResultsScreen from './src/screens/SearchResults';
 import DestinationSearchScreen from './src/screens/DestinationScreen';
+import GuestsScreen from './src/screens/Guests';
 
 const post1 = feed[0];
 const post2 = feed[1];
