@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+import 'react-native-gesture-handler';
 import type {Node} from 'react';
 import {
   SafeAreaView,
@@ -26,32 +27,13 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import HomeScreen from './src/screens/Home';
-import Post from './src/components/Post';
-import feed from './assests/data/feed';
-import SearchResultsScreen from './src/screens/SearchResults';
-import DestinationSearchScreen from './src/screens/DestinationScreen';
-import GuestsScreen from './src/screens/Guests';
-
-const post1 = feed[0];
-const post2 = feed[1];
+import Router from './src/navigation/router';
 
 const App: () => Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        {/*<HomeScreen />*/}
-
-        {/*<Post post={post1} >*/}
-        {/*<Post post={post2}> */}
-
-        {/*<SearchResultsScreen/>*/}
-
-        {/*<DestinationSearchScreen/>*/}
-
-        <GuestsScreen />
-      </SafeAreaView>
+      <Router />
     </>
   );
 };

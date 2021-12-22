@@ -9,6 +9,7 @@ const GuestsScreen = props => {
   return (
     <View>
       <View style={styles.row}>
+        {/*----------------For Adults------------------------*/}
         <View>
           <Text style={styles.age}>Adults</Text>
           <Text style={styles.askAge}>Ages 13 or above</Text>
@@ -32,6 +33,7 @@ const GuestsScreen = props => {
       </View>
 
       <View style={styles.row}>
+        {/*----------------For Children------------------------*/}
         <View>
           <Text style={styles.age}>Children</Text>
           <Text style={styles.askAge}>Ages 2 - 12</Text>
@@ -55,6 +57,7 @@ const GuestsScreen = props => {
       </View>
 
       <View style={styles.row}>
+        {/*----------------For Infants------------------------*/}
         <View>
           <Text style={styles.age}>Infants</Text>
           <Text style={styles.askAge}>Under 2</Text>
