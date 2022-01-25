@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
+  "expoServerPort": null,
   "packagerPort": 19000,
   "expoServerNgrokUrl": "https://vn-xs3.anonymous.airbnb.exp.direct",
   "packagerNgrokUrl": "https://packager.vn-xs3.anonymous.airbnb.exp.direct",
-  "ngrokPid": 8548,
+  "ngrokPid": 12276,
   "packagerPid": null,
   "webpackServerPort": null
 }
